@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+@import 'config';
+
+// ===================================================================
+// 言語表示切り替え
+// ===================================================================
+html[lang=en] .hide_en {
+    display: none;
+}
+
+html[lang=zh-Hans] .hide_zh-Hans {
+    display: none;
+}
+html[lang=ko] .hide_ko {
+    display: none;
+}
+
+
+// ===================================================================
+// body
+// ===================================================================
+body{
+  position: relative;
+  overflow-x: hidden;
+  padding-right: constant(safe-area-inset-right);
+  padding-left: constant(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-left: env(safe-area-inset-left);
+  &.is-noscroll{
+    overflow: hidden;
+  }
+}

@@ -80,7 +80,6 @@ body {
   font-weight: 700;
   display: inline-block;
   background-image: linear-gradient(to right, #a6b1e1, #790c5a);
-  -webkit-background-clip: text;
   color: transparent;
   letter-spacing: .2rem;
   transition: all .2s; }
