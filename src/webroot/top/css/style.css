@@ -498,10 +498,6 @@ body.is-noscroll {
           box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -517,14 +513,11 @@ body {
   text-transform: uppercase;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  margin-bottom: 6rem;
 }
 
 .heading-primary--main {
   display: block;
-  font-size: 6rem;
   font-weight: 400;
-  letter-spacing: 3.5rem;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 1s;
@@ -535,15 +528,12 @@ body {
 
 .heading-primary--sub {
   display: block;
-  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 1.75rem;
   -webkit-animation: moveInRight 1s ease-out;
           animation: moveInRight 1s ease-out;
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
@@ -551,7 +541,6 @@ body {
   background-image: -webkit-linear-gradient(left, #a6b1e1, #790c5a);
   background-image: linear-gradient(to right, #a6b1e1, #790c5a);
   color: transparent;
-  letter-spacing: .2rem;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
@@ -564,17 +553,8 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.paragraph {
-  font-size: 1.6rem;
-}
-
-.paragraph:not(:last-child) {
-  margin-bottom: 3rem;
 }
 
 .u-center-text {
@@ -604,13 +584,11 @@ body {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
   -webkit-transition: all .2s;
   transition: all .2s;
   position: relative;
-  font-size: 1.6rem;
   border: none;
   cursor: pointer;
 }
@@ -670,7 +648,6 @@ body {
 }
 
 .btn-text:link, .btn-text:visited {
-  font-size: 1.6rem;
   color: #a6b1e1;
   display: inline-block;
   text-decoration: none;
@@ -748,13 +725,11 @@ body {
 .footer {
   background-color: #333;
   padding: 10rem 0;
-  font-size: 1.4rem;
   color: #f7f7f7;
   text-align: center;
 }
 
 .row {
-  max-width: 114rem;
   margin: 0 auto;
 }
 
