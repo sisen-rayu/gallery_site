@@ -517,7 +517,9 @@ body {
 
 .heading-primary--main {
   display: block;
+  font-size: 100px;
   font-weight: 400;
+  letter-spacing: 7.5px;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 1s;
@@ -528,69 +530,64 @@ body {
 
 .heading-primary--sub {
   display: block;
+  font-size: 55px;
   font-weight: 700;
+  letter-spacing: 5.5px;
   -webkit-animation: moveInRight 1s ease-out;
           animation: moveInRight 1s ease-out;
 }
 
 .heading-secondary {
-  text-transform: uppercase;
+  text-align: center;
+  font-size: 30px;
   font-weight: 700;
-  display: inline-block;
-  background-image: -webkit-gradient(linear, left top, right top, from(#a6b1e1), to(#790c5a));
-  background-image: -webkit-linear-gradient(left, #a6b1e1, #790c5a);
-  background-image: linear-gradient(to right, #a6b1e1, #790c5a);
-  color: transparent;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-.heading-secondary:hover {
-  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
-      -ms-transform: skewY(2deg) skewX(15deg) scale(1.1);
-          transform: skewY(2deg) skewX(15deg) scale(1.1);
-  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  letter-spacing: 1.2px;
 }
 
 .heading-tertiary {
+  font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 20px;
 }
 
-.u-center-text {
-  text-align: center !important;
+.paragraph {
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem !important;
+.hero_btn {
+  width: 300px;
+  font-size: 20px;
+  background-color: #fff;
+  display: block;
+  color: #333;
+  padding: 15px;
+  border-radius: 37px;
+  margin: 50px auto 0;
 }
 
-.u-margin-bottom-medium {
-  margin-bottom: 4rem !important;
-}
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important;
-}
-
-.u-margin-top-big {
-  margin-top: 8rem !important;
-}
-
-.u-margin-top-huge {
-  margin-top: 10rem !important;
+.hero_btn:hover {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
 }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
+  padding: 10px;
   display: inline-block;
   border-radius: 10rem;
   -webkit-transition: all .2s;
   transition: all .2s;
   position: relative;
+  font-size: 20px;
   border: none;
   cursor: pointer;
+  width: 300px;
 }
 
 .btn:hover {
@@ -648,6 +645,7 @@ body {
 }
 
 .btn-text:link, .btn-text:visited {
+  font-size: 20px;
   color: #a6b1e1;
   display: inline-block;
   text-decoration: none;
@@ -655,6 +653,7 @@ body {
   padding: 3px;
   -webkit-transition: all .2s;
   transition: all .2s;
+  margin-top: 20px;
 }
 
 .btn-text:hover {
@@ -680,7 +679,7 @@ body {
 }
 
 .composition__photo {
-  width: 55%;
+  width: 50%;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 2px;
@@ -730,7 +729,7 @@ body {
 }
 
 .row {
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 .row:not(:last-child) {
@@ -775,6 +774,20 @@ body {
   width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 
+.access_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.access_content1 {
+  margin-right: 150px;
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(166, 177, 225, 0.8)), to(rgba(121, 12, 90, 0.8))), url(../images/about.jpg);
@@ -783,8 +796,6 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .header__text-box {
@@ -814,7 +825,7 @@ body {
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .navigation__checkbox {
@@ -975,14 +986,12 @@ body {
 
 .section-current {
   background-color: #f7f7f7;
-  padding: 25rem 0;
-  margin-top: -20vh;
+  padding: 150px 100px;
 }
 
 .section-access {
   background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
-  margin-top: -10rem;
+  padding: 20px 100px 100px;
 }
 
 .company {
