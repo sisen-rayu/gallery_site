@@ -300,10 +300,15 @@ transform: scale(0.95);
 .access_content1 {
   margin-right: 150px;
 }
+#map {
+  width: 100%;
+  height: 400px;
+  background-color: grey;
+}
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(166, 177, 225, 0.8), rgba(121, 12, 90, 0.8)), url(../images/about.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(170, 170, 170, 0.8)), url(../images/about.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -328,7 +333,7 @@ transform: scale(0.95);
 
 .about_header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(166, 177, 225, 0.8), rgba(121, 12, 90, 0.8)), url("../images/gallery09-full.jpg");
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(170, 170, 170, 0.8)), url("../images/gallery09-full.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
