@@ -30,7 +30,7 @@ table {
 }
 
 body {
-  font-family: 'Hiragino Kaku Gothic ProN', 'ƒqƒ‰ƒMƒmŠpƒS ProN W3', Meiryo, 'ƒƒCƒŠƒI', 'Lucida Grande', sans-serif;
+  font-family: 'Hiragino Kaku Gothic ProN', 'ï¿½qï¿½ï¿½ï¿½Mï¿½mï¿½pï¿½S ProN W3', Meiryo, 'ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½I', 'Lucida Grande', sans-serif;
   font-size: 12px;
   color: #000000;
   line-height: 1;
@@ -796,9 +796,9 @@ body {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(170, 170, 170, 0.8))), url(../images/about.jpg);
-  background-image: -webkit-linear-gradient(left top, rgba(0, 0, 0, 0.8), rgba(170, 170, 170, 0.8)), url(../images/about.jpg);
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(170, 170, 170, 0.8)), url(../images/about.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(170, 170, 170, 0.8))), url(..https://github.com/sisen-rayu/gallery_site/blob/master/docs/images/about.jpg?raw=true);
+  background-image: -webkit-linear-gradient(left top, rgba(0, 0, 0, 0.8), rgba(170, 170, 170, 0.8)), url(https://github.com/sisen-rayu/gallery_site/blob/master/docs/images/about.jpg?raw=true);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.8), rgba(170, 170, 170, 0.8)), url(https://github.com/sisen-rayu/gallery_site/blob/master/docs/images/about.jpg?raw=true);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -816,7 +816,7 @@ body {
 
 .milk {
   height: 35vh;
-  background-image: url("../images/milkland.jpg");
+  background-image: url("/images/milkland.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
