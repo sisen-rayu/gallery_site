@@ -113,7 +113,7 @@
                 </div>
                 
             </div>
-            <!--The div element for the map -->
+            <!-- The div element for the map
             <div id="map"></div>
             <script>
             // Initialize and add the map
@@ -136,13 +136,39 @@
                 map.mapTypes.set( 'GrayScaleMap', mapType);
                 map.setMapTypeId( 'GrayScaleMap' );
         /*=========ここまで追加=========*/
-            </script>
-            <!--Load the API from the specified URL
-            * The async attribute allows the browser to render the page while the API loads
-            * The key parameter will contain your own API key (which is not needed for this tutorial)
-            * The callback parameter executes the initMap() function
-            -->
-            <script async defer
+            </script> -->
+<script>
+    function initMap() {
+        var latlng = new google.maps.LatLng( 35.661763, 139.72301 );
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: latlng
+        });
+			
+        //マーカーの設定
+        var marker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            icon: new google.maps.MarkerImage(
+               'マーカー画像のURL',//マーカー画像URL
+                new google.maps.Size(60, 80),//マーカー画像のサイズ
+                new google.maps.Point(0, 0),//マーカー画像表示の起点（変更しない）
+                new google.maps.Point(30, 80)//マーカー位置の調整
+            ),  
+        });
+			
+        /*=========ここから追加=========*/
+        var mapStyle = [ {
+            "stylers": [ {
+            "saturation": -100
+            } ]
+        } ];
+        var mapType = new google.maps.StyledMapType(mapStyle);
+            map.mapTypes.set( 'GrayScaleMap', mapType);
+            map.setMapTypeId( 'GrayScaleMap' );
+        /*=========ここまで追加=========*/
+      }
+</script>            <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDarvSrVNsj6ZMTrrzPotgUBDF7CXknfw4&callback=initMap">
             </script>
 
