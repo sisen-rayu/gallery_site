@@ -10,7 +10,7 @@
 <body>
   <body>
     <!-- ナビゲーション -->
-    <!-- <div class="navigation">
+    <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
         <label for="navi-toggle" class="navigation__button">
@@ -21,14 +21,14 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="index.html" class="navigation__link"><span>00</span>HOME</a></li>
+                <li class="navigation__item"><a href="test.html" class="navigation__link"><span>00</span>HOME</a></li>
                 <li class="navigation__item"><a href="about.html" class="navigation__link"><span>01</span>ABOUT</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>EXHIBITION</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>CREATOR</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>CONTACT</a></li>
                 </ul>
         </nav>
-    </div> -->
+    </div>
 
 
     <!-- ヘッダー -->
@@ -89,7 +89,6 @@
             </div>
 
             <div class="access_row">
-                <div id="map"></div>
                 <div class="col-1-of-2 access_content1">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12966.48144398057!2d139.71428163014892!3d35.66172401704143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b7adf920c3b%3A0x4f6cab5b98fdf58f!2sCalm%20%26%20Punk%20Gallery!5e0!3m2!1sja!2sjp!4v1607831489152!5m2!1sja!2sjp" 
                     width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -113,28 +112,6 @@
                 </div>
                 
             </div>
-            <!--The div element for the map -->
-            <div id="map"></div>
-            <script>
-            // Initialize and add the map
-            function initMap() {
-            // The location of Uluru
-            var uluru= {lat: -25.344, lng: 131.036};
-            // The map, centered at Uluru
-            var map= new google.maps.Map(
-                document.getElementById('map'), {zoom: 4, center: uluru});
-            // The marker, positioned at Uluru
-            var marker= new google.maps.Marker({position: uluru, map: map});
-            }
-            </script>
-            <!--Load the API from the specified URL
-            * The async attribute allows the browser to render the page while the API loads
-            * The key parameter will contain your own API key (which is not needed for this tutorial)
-            * The callback parameter executes the initMap() function
-            -->
-            <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDarvSrVNsj6ZMTrrzPotgUBDF7CXknfw4&callback=initMap">
-            </script>
         </section>
 
         
@@ -148,6 +125,6 @@
                 </p>
     </footer>
 
-
+<script src="../webroot/top/js/navi.js"></script>
 </body>
 </html>

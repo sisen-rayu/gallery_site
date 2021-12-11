@@ -891,6 +891,11 @@ body {
   list-style: none;
   text-align: center;
   width: 100%;
+  display: none;
+}
+
+.navigation__list.js-shown {
+  display: block;
 }
 
 .navigation__item {

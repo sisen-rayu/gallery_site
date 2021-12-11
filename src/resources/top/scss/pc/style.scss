@@ -390,6 +390,10 @@ transform: scale(0.95);
   list-style: none;
   text-align: center;
   width: 100%;
+  display: none;
+  &.js-shown {
+    display: block;
+  }
 }
 
 .navigation__item {
